@@ -1,8 +1,8 @@
 const app = require("./src/app");
-const http = require('http');
-const port = normalizePort(process.env.PORT || '8888');
+const http = require("http");
+const port = normalizePort(process.env.PORT || "8888");
 
-app.set('port', port);
+app.set("port", port);
 
 const server = http.createServer(app);
 
