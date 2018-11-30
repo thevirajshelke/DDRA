@@ -104,7 +104,7 @@ async function resolveReverse(ipaddress) {
     }
 }
 
-async function resolveAny(domain) {
+async function resolveANY(domain) {
     try {
         return await dnsPromises.resolveAny(domain);
     } catch (err) {
@@ -134,6 +134,6 @@ module.exports = {
     resolveNAPTR,
     resolveTXT,
     resolveReverse,
-    resolveAny,
+    resolveANY,
     batchResolveMX
 };
