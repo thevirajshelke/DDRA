@@ -4,7 +4,7 @@
   "description": "DDRA DNS REST API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
