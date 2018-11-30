@@ -1,21 +1,37 @@
 # DDRA
 DDRA DNS REST API
 
-#IPv4
+# USAGE
+* Without specifying port (Default port **8888** is used)
+
+    `npm start` _**OR**_ `node index.js`
+    
+* Specifying port
+
+    `npm start --port=1234` _**OR**_ `node index.js --port=1234` 
+    
+# API request & response 
+
+1. IPv4
+```javascript
 {
     "data": [
         "216.58.196.69"
     ]
 }
+```
 
-#IPv6
+2. IPv6
+```javascript
 {
     "data": [
         "2404:6800:4009:809::2005"
     ]
 }
+```
 
-#MX
+3. MX
+```javascript
 {
     "data": [
         {
@@ -40,8 +56,10 @@ DDRA DNS REST API
         }
     ]
 }
+```
 
-#NS
+4. NS         
+```javascript
 {
     "data": [
         "ns1.google.com",
@@ -50,8 +68,10 @@ DDRA DNS REST API
         "ns2.google.com"
     ]
 }
+```
 
-#TXT
+5. TXT
+```javascript
 {
     "data": [
         [
@@ -59,8 +79,9 @@ DDRA DNS REST API
         ]
     ]
 }
-
-#SOA
+```
+6. SOA
+```javascript
 {
     "data": {
         "nsname": "ns1.google.com",
@@ -72,8 +93,10 @@ DDRA DNS REST API
         "minttl": 60
     }
 }
+```
 
-#ANY
+7. ANY
+```javascript
 {
     "data": [
         {
@@ -124,3 +147,4 @@ DDRA DNS REST API
         }
     ]
 }
+```
