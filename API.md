@@ -150,6 +150,7 @@ Response
 ```
 
 **7. /resolveANY**
+
 Request
 ```javascript
 {
