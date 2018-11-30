@@ -1,11 +1,12 @@
-1. IPv4
-**Request**
+**1. /resolveIPv4**
+
+Request
 ```javascript
 {
 	"domain": "gmail.com"
 }
 ```
-**Response**
+Response
 ```javascript
 {
     "status": "success",
@@ -17,7 +18,15 @@
 }
 ```
 
-1. IPv6
+**2. /resolveIPv6**
+
+Request
+```javascript
+{
+	"domain": "gmail.com"
+}
+```
+Response
 ```javascript
 {
     "status": "success",
@@ -29,7 +38,15 @@
 }
 ```
 
-3. MX
+**3. /resolveMX**
+
+Request
+```javascript
+{
+	"domain": "gmail.com"
+}
+```
+Response
 ```javascript
 {
     "status": "success",
@@ -60,7 +77,16 @@
 }
 ```
 
-4. NS         
+**4. /resolveNS**
+
+Request
+```javascript
+{
+	"domain": "gmail.com"
+}
+```
+Response
+
 ```javascript
 {
     "status": "success",
@@ -75,7 +101,16 @@
 }
 ```
 
-5. TXT
+**5. /resolveTXT**
+
+Request
+```javascript
+{
+	"domain": "gmail.com"
+}
+```
+Response
+
 ```javascript
 {
     "status": "success",
@@ -88,7 +123,15 @@
     "error": null
 }
 ```
-6. SOA
+**6. /resolveSOA**
+
+Request
+```javascript
+{
+	"domain": "gmail.com"
+}
+```
+Response
 ```javascript
 {
     "status": "success",
@@ -106,7 +149,14 @@
 }
 ```
 
-7. ANY
+**7. /resolveANY**
+Request
+```javascript
+{
+	"domain": "gmail.com"
+}
+```
+Response
 ```javascript
 {
     "status": "success",
