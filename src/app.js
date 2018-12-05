@@ -10,6 +10,6 @@
 
     app.use(bodyParser.json());
 
-    app.use("/", routes);
+    app.use("/ddra", routes);
     module.exports = app;
 })();
