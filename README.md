@@ -8,11 +8,11 @@ DDRA DNS REST API
 
 * Without specifying port (Default port **8888** is used)
 
-    `npm start` _**OR**_ `node index.js`
+    `npm start` or `node index.js`
     
 * Specifying port
 
-    `npm start --port=1234` _**OR**_ `npm start -p 1234` _**OR**_ `node index.js --port=1234` _**OR**_ `node index.js -p 1234`
+    `npm start --port=1234` or`npm start -p 1234` or `node index.js --port=1234` or `node index.js -p 1234`
     
 # API request & response 
 
