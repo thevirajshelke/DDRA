@@ -1,13 +1,12 @@
 const app = require("./src/app");
 const http = require("http");
-let port = "8888";
+var program = require("commander");
+program
+    .version("1.0.0", "-v, --version")
+    .option("-p, --port <n>", "Port Number", "8888")
+    .parse(process.argv);
 
-process.argv.forEach(function (val) {
-    if (val.indexOf("--port=") !== -1) {
-        port = val.split("=")[1];
-    }
-});
-
+const port = program.port;
 app.set("port", port);
 const server = http.createServer(app);
 

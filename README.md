@@ -12,7 +12,7 @@ DDRA DNS REST API
     
 * Specifying port
 
-    `npm start --port=1234` _**OR**_ `node index.js --port=1234` 
+    `npm start --port=1234` _**OR**_ `npm start -p 1234` _**OR**_ `node index.js --port=1234` _**OR**_ `node index.js -p 1234`
     
 # API request & response 
 
