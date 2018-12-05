@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
     res.json(utils.formatResponse("success", "The server is up & running!", null, null));
 });
 
-router.post("/resolveIPv4", async (req, res) => {
+router.get("/resolveipv4", async (req, res) => {
     try {
         let resp = await dns.resolveIPv4(req.body.domain, req.body.ttl);
         res.json(utils.formatResponse("success", "Domain is resolved into IPv4 record(s)", resp, null));
@@ -16,7 +16,7 @@ router.post("/resolveIPv4", async (req, res) => {
     }
 });
 
-router.post("/resolveIPv6", async (req, res) => {
+router.post("/resolveipv6", async (req, res) => {
     try {
         let resp = await dns.resolveIPv6(req.body.domain, req.body.ttl);
         res.json(utils.formatResponse("success", "Domain is resolved into IPv6 record(s)", resp, null));
@@ -25,7 +25,7 @@ router.post("/resolveIPv6", async (req, res) => {
     }
 });
 
-router.post("/resolveCNAME", async (req, res) => {
+router.post("/resolvecname", async (req, res) => {
     try {
         let resp = await dns.resolveCNAME(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into CNAME record(s)", resp, null));
@@ -34,7 +34,7 @@ router.post("/resolveCNAME", async (req, res) => {
     }
 });
 
-router.post("/resolveMX", async (req, res) => {
+router.post("/resolvemx", async (req, res) => {
     try {
         let resp = await dns.resolveMX(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into MX record(s)", resp, null));
@@ -43,7 +43,7 @@ router.post("/resolveMX", async (req, res) => {
     }
 });
 
-router.post("/resolveNS", async (req, res) => {
+router.post("/resolvens", async (req, res) => {
     try {
         let resp = await dns.resolveNS(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into NS record(s)", resp, null));
@@ -52,7 +52,7 @@ router.post("/resolveNS", async (req, res) => {
     }
 });
 
-router.post("/resolvePTR", async (req, res) => {
+router.post("/resolveptr", async (req, res) => {
     try {
         let resp = await dns.resolvePTR(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into PTR record(s)", resp, null));
@@ -61,7 +61,7 @@ router.post("/resolvePTR", async (req, res) => {
     }
 });
 
-router.post("/resolveSOA", async (req, res) => {
+router.post("/resolvesoa", async (req, res) => {
     try {
         let resp = await dns.resolveSOA(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into SOA record(s)", resp, null));
@@ -70,7 +70,7 @@ router.post("/resolveSOA", async (req, res) => {
     }
 });
 
-router.post("/resolveSRV", async (req, res) => {
+router.post("/resolvesrv", async (req, res) => {
     try {
         let resp = await dns.resolveSRV(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into SRV record(s)", resp, null));
@@ -79,7 +79,7 @@ router.post("/resolveSRV", async (req, res) => {
     }
 });
 
-router.post("/resolveTXT", async (req, res) => {
+router.post("/resolvetxt", async (req, res) => {
     try {
         let resp = await dns.resolveTXT(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into TXT record(s)", resp, null));
@@ -88,7 +88,7 @@ router.post("/resolveTXT", async (req, res) => {
     }
 });
 
-router.post("/resolveANY", async (req, res) => {
+router.post("/resolveany", async (req, res) => {
     try {
         let resp = await dns.resolveANY(req.body.domain);
         res.json(utils.formatResponse("success", "Domain is resolved into ANY record(s)", resp, null));
